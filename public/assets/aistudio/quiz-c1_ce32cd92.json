@@ -1,0 +1,243 @@
+{
+  "schemaVersion": "1.0",
+  "title": "Healthy Lifestyle Quiz",
+  "level": "C1",
+  "language": "en-GB",
+  "questionCount": 6,
+  "passScore": 5,
+  "status": "draft_pending_teacher_approval",
+  "questions": [
+    {
+      "id": "C1-NQ01",
+      "type": "multiple_choice",
+      "skill": "vocabulary",
+      "learningObjective": "C1-LO1",
+      "sourceReferences": [
+        "C1-V06",
+        "C1-V02"
+      ],
+      "bloomLevel": "Understand",
+      "difficulty": "medium",
+      "question": "A viral wellness video asserts that a newly marketed herbal tea cures insomnia within 48 hours, yet no peer-reviewed studies have tested the product so far. Why is it more accurate in C1 academic writing to call this an 'unsubstantiated claim' rather than a 'proven lie'?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Because 'unsubstantiated' means the claim has already been legally banned by public health authorities."
+        },
+        {
+          "id": "B",
+          "text": "Because 'unsubstantiated' indicates that the claim lacks credible supporting evidence, without asserting that it has been definitively disproved."
+        },
+        {
+          "id": "C",
+          "text": "Because 'unsubstantiated' is an informal expression that softens criticism of commercial health brands."
+        },
+        {
+          "id": "D",
+          "text": "Because 'unsubstantiated' suggests the product is evidence-based but only works for a small group of consumers."
+        }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Theo sắc thái học thuật của C1-V06, 'unsubstantiated' chỉ ra rằng một tuyên bố chưa có bằng chứng khoa học đáng tin cậy hậu thuẫn, chứ không đồng nghĩa với việc tuyên bố đó đã bị chứng minh chắc chắn là sai sự thật ('false' hoặc 'proven lie').",
+      "distractorExplanationsVi": {
+        "A": "Sai nghĩa: 'unsubstantiated' nói về việc thiếu bằng chứng kiểm chứng, không liên quan đến quyết định cấm về mặt pháp lý.",
+        "C": "Sai văn phong: 'unsubstantiated claim' là cách diễn đạt trang trọng, khách quan và chuẩn mực trong học thuật, không phải ngôn ngữ thân mật.",
+        "D": "Trái ngược hoàn toàn với nghĩa gốc: một tuyên bố 'unsubstantiated' không phải là tuyên bố dựa trên bằng chứng ('evidence-based')."
+      }
+    },
+    {
+      "id": "C1-NQ02",
+      "type": "multiple_choice",
+      "skill": "vocabulary",
+      "learningObjective": "C1-LO1",
+      "sourceReferences": [
+        "C1-V03",
+        "C1-V07",
+        "C1-V10"
+      ],
+      "bloomLevel": "Apply",
+      "difficulty": "medium",
+      "question": "Public health specialists note that tailored __________ can significantly __________ preventable conditions, whereas __________ programmes often fail to account for diverse community needs.",
+      "options": [
+        {
+          "id": "A",
+          "text": "lifestyle interventions / eliminate from / one-size-fits-all"
+        },
+        {
+          "id": "B",
+          "text": "preventive healthcare / mitigate from / evidence-based"
+        },
+        {
+          "id": "C",
+          "text": "lifestyle interventions / mitigate the risk of / one-size-fits-all"
+        },
+        {
+          "id": "D",
+          "text": "socioeconomic determinants / correlate with / counterproductive"
+        }
+      ],
+      "correctOptionId": "C",
+      "explanationVi": "Cả ba vị trí đều khớp chuẩn xác về collocation và sắc thái C1: 'tailored lifestyle interventions' (C1-V03), 'significantly mitigate the risk of' (C1-V07 – giảm thiểu nguy cơ một cách thận trọng) và 'one-size-fits-all programmes' (C1-V10 – mô hình rập khuôn).",
+      "distractorExplanationsVi": {
+        "A": "Sai cú pháp và phóng đại quá mức: không dùng 'eliminate from' và khẳng định loại bỏ hoàn toàn bệnh lý không phù hợp sắc thái thận trọng C1.",
+        "B": "Sai ngữ pháp ('mitigate' là ngoại động từ trực tiếp, không dùng 'mitigate from') và mâu thuẫn ngữ nghĩa khi nói các chương trình 'evidence-based' thường bỏ qua nhu cầu cộng đồng.",
+        "D": "Sai logic ngữ cảnh: 'socioeconomic determinants' là điều kiện kinh tế – xã hội, không thể được thiết kế riêng ('tailored') như các chương trình can thiệp."
+      }
+    },
+    {
+      "id": "C1-NQ03",
+      "type": "multiple_choice",
+      "skill": "vocabulary",
+      "learningObjective": "C1-LO1",
+      "sourceReferences": [
+        "C1-V01",
+        "C1-V04",
+        "C1-V05",
+        "C1-V08",
+        "C1-V09"
+      ],
+      "bloomLevel": "Analyse",
+      "difficulty": "hard",
+      "question": "Which sentence demonstrates accurate C1 lexical precision AND correct academic collocations?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Expanding a preventive healthcare requires long-term adherence for evidence-based guidelines."
+        },
+        {
+          "id": "B",
+          "text": "Ignoring the socioeconomic determination of health can make well-meaning campaigns unproductive, causing stress to rise sharply."
+        },
+        {
+          "id": "C",
+          "text": "Community walking groups tend to correlate to higher adherence with weekly exercise plans."
+        },
+        {
+          "id": "D",
+          "text": "Investing in preventive healthcare and addressing socioeconomic determinants can support stronger long-term adherence to healthy routines."
+        }
+      ],
+      "correctOptionId": "D",
+      "explanationVi": "Câu D sử dụng chính xác cả ba cụm từ học thuật: 'investing in preventive healthcare' (không mạo từ 'a', C1-V01), 'addressing socioeconomic determinants' (C1-V05) và 'long-term adherence to' (giới từ 'to', C1-V04).",
+      "distractorExplanationsVi": {
+        "A": "Mắc hai lỗi: thêm mạo từ 'a' trước danh từ không đếm được 'preventive healthcare' và dùng sai giới từ 'adherence for' (đúng là 'adherence to').",
+        "B": "Mắc hai lỗi chính xác từ vựng: dùng nhầm 'determination' (sự quyết tâm) thay vì 'determinants' (yếu tố quyết định, C1-V05), và dùng 'unproductive' thay vì 'counterproductive' (gây tác dụng ngược làm tăng căng thẳng, C1-V08).",
+        "C": "Sai hai giới từ học thuật: phải dùng 'correlate with' (không dùng 'to', C1-V09) và 'adherence to' (không dùng 'with', C1-V04)."
+      }
+    },
+    {
+      "id": "C1-NQ04",
+      "type": "multiple_choice",
+      "skill": "grammar",
+      "learningObjective": "C1-LO2",
+      "sourceReferences": [
+        "C1-G01"
+      ],
+      "bloomLevel": "Analyse",
+      "difficulty": "hard",
+      "question": "Which sentence avoids BOTH dogmatic overgeneralisation AND internal tone clash?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It is reasonable to suggest that lower access to affordable fresh food can contribute to poorer dietary outcomes in certain contexts."
+        },
+        {
+          "id": "B",
+          "text": "It appears plausible that skipping breakfast inevitably causes severe chronic illness in every adult."
+        },
+        {
+          "id": "C",
+          "text": "Regular cycling undeniably guarantees complete protection against all heart conditions, arguably to some extent."
+        },
+        {
+          "id": "D",
+          "text": "Public health leaflets always prove that higher education directly causes healthier eating habits across all populations."
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Câu A kết hợp nhất quán các phương tiện hedging/qualification của C1-G01: cấu trúc nhận định thận trọng ('It is reasonable to suggest that'), động từ khuyết thiếu ('can contribute to') và giới hạn phạm vi ('in certain contexts'), hoàn toàn không tuyệt đối hóa hay mâu thuẫn sắc thái.",
+      "distractorExplanationsVi": {
+        "B": "Mắc lỗi mâu thuẫn sắc thái (tone clash): mở đầu thận trọng ('It appears plausible') nhưng lại kết thúc bằng khẳng định tuyệt đối ('inevitably causes' và 'in every adult').",
+        "C": "Mắc đồng thời lỗi khẳng định cực đoan ('undeniably guarantees complete protection against all') và mâu thuẫn sắc thái với phần rào đón phía sau ('arguably to some extent').",
+        "D": "Mắc lỗi khái quát hóa quá mức (overgeneralisation) với các từ tuyệt đối hóa ('always prove', 'directly causes', 'across all populations')."
+      }
+    },
+    {
+      "id": "C1-NQ05",
+      "type": "multiple_choice",
+      "skill": "grammar",
+      "learningObjective": "C1-LO2",
+      "sourceReferences": [
+        "C1-G01",
+        "C1-V04"
+      ],
+      "bloomLevel": "Apply",
+      "difficulty": "medium",
+      "question": "Flexible workplace wellness schemes __________ higher long-term adherence, __________ employees __________ free to choose activities that suit their schedules.",
+      "options": [
+        {
+          "id": "A",
+          "text": "appear achieving / assuming that / remain"
+        },
+        {
+          "id": "B",
+          "text": "appear to achieve / assuming that / will remain"
+        },
+        {
+          "id": "C",
+          "text": "appear to achieve / assuming that / remain"
+        },
+        {
+          "id": "D",
+          "text": "appear to achieve / unless / will remain"
+        }
+      ],
+      "correctOptionId": "C",
+      "explanationVi": "Động từ hedging 'appear' đi với động từ nguyên mẫu có 'to' ('appear to achieve'), và liên từ điều kiện 'assuming that' đi với mệnh đề chia ở thì Hiện tại đơn ('employees remain') để diễn đạt điều kiện (C1-G01).",
+      "distractorExplanationsVi": {
+        "A": "Sai cấu trúc động từ: không dùng V-ing sau 'appear' (phải là 'appear to achieve').",
+        "B": "Sai thì trong mệnh đề điều kiện: không dùng 'will' ngay sau liên từ điều kiện 'assuming that'.",
+        "D": "Mắc hai lỗi: dùng 'unless' làm đảo ngược hoàn toàn logic câu và dùng sai 'will' trong mệnh đề điều kiện."
+      }
+    },
+    {
+      "id": "C1-NQ06",
+      "type": "multiple_choice",
+      "skill": "grammar",
+      "learningObjective": "C1-LO2",
+      "sourceReferences": [
+        "C1-G01",
+        "C1-V09",
+        "C1-V04"
+      ],
+      "bloomLevel": "Analyse",
+      "difficulty": "hard",
+      "question": "In academic and professional health communication, in which of the following situations would cautious hedging (for example, 'it might be somewhat advisable to take action') be LEAST appropriate?",
+      "options": [
+        {
+          "id": "A",
+          "text": "When evaluating how far a national sugar tax influences long-term obesity trends across diverse income groups."
+        },
+        {
+          "id": "B",
+          "text": "When delivering an urgent safety warning or basic, well-established medical instruction where clarity is essential."
+        },
+        {
+          "id": "C",
+          "text": "When discussing an observational study that finds a correlation between neighbourhood parks and physical activity."
+        },
+        {
+          "id": "D",
+          "text": "When commenting on whether a new workplace wellness initiative will improve long-term adherence among all employees."
+        }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Theo mục 9 của C1-G01 về tính phù hợp ngữ cảnh, trong các cảnh báo an toàn khẩn cấp hoặc hướng dẫn y tế cơ bản đã rõ ràng, việc rào đón quá mức sẽ làm giảm tính rõ ràng và hiệu lực truyền đạt.",
+      "distractorExplanationsVi": {
+        "A": "Đánh giá tác động của chính sách thuế lên xu hướng sức khỏe đa biến là ngữ cảnh rất cần ngôn ngữ hedging thận trọng.",
+        "C": "Khi phân tích mối tương quan ('correlation', C1-V09) từ nghiên cứu quan sát, hedging là cần thiết để tránh suy diễn nhân quả vội vàng.",
+        "D": "Dự đoán hiệu quả dài hạn ('long-term adherence', C1-V04) của một sáng kiến mới đối với mọi nhân viên chịu tác động của nhiều biến số nên cần diễn đạt có điều kiện."
+      }
+    }
+  ]
+}

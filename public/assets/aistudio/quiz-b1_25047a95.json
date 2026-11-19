@@ -1,0 +1,241 @@
+{
+  "schemaVersion": "1.0",
+  "title": "Healthy Lifestyle Quiz",
+  "level": "B1",
+  "language": "en-GB",
+  "questionCount": 6,
+  "passScore": 5,
+  "status": "draft_pending_teacher_approval",
+  "questions": [
+    {
+      "id": "B1-NQ01",
+      "type": "multiple_choice",
+      "skill": "vocabulary",
+      "learningObjective": "B1-LO1",
+      "sourceReferences": [
+        "B1-V02",
+        "B1-V01",
+        "B1-V08"
+      ],
+      "bloomLevel": "Apply",
+      "difficulty": "medium",
+      "question": "Instead of buying ready-made sausages and tinned soup every evening, Lan started cooking fresh fish and vegetables at home to avoid eating too much __________.",
+      "options": [
+        {
+          "id": "A",
+          "text": "process food"
+        },
+        {
+          "id": "B",
+          "text": "balanced diet"
+        },
+        {
+          "id": "C",
+          "text": "mental well-being"
+        },
+        {
+          "id": "D",
+          "text": "processed food"
+        }
+      ],
+      "correctOptionId": "D",
+      "explanationVi": "Cụm danh từ 'processed food' (thực phẩm chế biến sẵn, B1-V02) là danh từ không đếm được nên đi chính xác sau 'too much' và khớp hoàn toàn với ngữ cảnh tránh xúc xích làm sẵn và súp đóng hộp.",
+      "distractorExplanationsVi": {
+        "A": "Sai hình thái từ: thiếu đuôi '-ed' ở quá khứ phân từ 'processed' (lỗi phổ biến đã cảnh báo trong B1-V02).",
+        "B": "Sai nghĩa và ngữ pháp: cá tươi và rau củ chính là chế độ ăn cân bằng ('a balanced diet'), không phải thứ Lan muốn tránh; ngoài ra 'balanced diet' là cụm danh từ đếm được nên không đi sau 'too much'.",
+        "C": "Sai nghĩa: 'mental well-being' (sức khỏe tinh thần, B1-V08) không thể kết hợp với động từ 'eating too much'."
+      }
+    },
+    {
+      "id": "B1-NQ02",
+      "type": "multiple_choice",
+      "skill": "vocabulary",
+      "learningObjective": "B1-LO1",
+      "sourceReferences": [
+        "B1-V03",
+        "B1-V04"
+      ],
+      "bloomLevel": "Understand",
+      "difficulty": "medium",
+      "question": "During summer training sessions, football players need to drink plenty of water before and after they __________.",
+      "options": [
+        {
+          "id": "A",
+          "text": "work out"
+        },
+        {
+          "id": "B",
+          "text": "work out their bodies"
+        },
+        {
+          "id": "C",
+          "text": "workout"
+        },
+        {
+          "id": "D",
+          "text": "stay hydrated"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "'work out' (B1-V03) là nội động từ (phrasal verb viết tách 2 từ, không có tân ngữ trực tiếp theo sau), mang nghĩa tập thể dục/rèn luyện thân thể, phù hợp sau chủ ngữ 'they'.",
+      "distractorExplanationsVi": {
+        "B": "Sai cách dùng động từ: 'work out' là nội động từ nên không thêm tân ngữ trực tiếp 'their bodies' ngay phía sau (lỗi thường gặp trong B1-V03).",
+        "C": "Sai từ loại: 'workout' viết liền 1 từ là danh từ (buổi tập), không thể làm động từ chính sau chủ ngữ 'they'.",
+        "D": "Sai logic ngữ cảnh: uống nhiều nước là cách để 'stay hydrated' (giữ cơ thể đủ nước), không hợp nghĩa khi nói uống nước trước và sau khi 'giữ đủ nước'."
+      }
+    },
+    {
+      "id": "B1-NQ03",
+      "type": "multiple_choice",
+      "skill": "vocabulary",
+      "learningObjective": "B1-LO1",
+      "sourceReferences": [
+        "B1-V01",
+        "B1-V08",
+        "B1-V10"
+      ],
+      "bloomLevel": "Apply",
+      "difficulty": "medium",
+      "question": "Which sentence uses the target health vocabulary CORRECTLY?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Spending twenty minutes in the park after school is great for a mental well-being."
+        },
+        {
+          "id": "B",
+          "text": "My grandfather has followed a balance diet with fresh fruit and brown rice for years."
+        },
+        {
+          "id": "C",
+          "text": "Nam is trying to break the habit of checking his phone in bed before going to sleep."
+        },
+        {
+          "id": "D",
+          "text": "If you want to stay fit, you should try to delete the habit of skipping lunch."
+        }
+      ],
+      "correctOptionId": "C",
+      "explanationVi": "Cấu trúc 'break the habit of + V-ing' (B1-V10) được dùng chính xác cả về động từ kết hợp ('break') lẫn giới từ 'of' đi kèm danh động từ 'checking' để diễn tả việc từ bỏ thói quen xấu.",
+      "distractorExplanationsVi": {
+        "A": "Sai mạo từ: 'mental well-being' (B1-V08) là danh từ không đếm được nên không dùng với mạo từ 'a'.",
+        "B": "Sai hình thái từ: thiếu đuôi '-ed' ở tính từ 'balanced' (đúng phải là 'a balanced diet', B1-V01).",
+        "D": "Sai collocation do dịch sát nghĩa từ tiếng Việt: không dùng 'delete a habit', phải dùng 'break a habit' (B1-V10)."
+      }
+    },
+    {
+      "id": "B1-NQ04",
+      "type": "multiple_choice",
+      "skill": "grammar",
+      "learningObjective": "B1-LO2",
+      "sourceReferences": [
+        "B1-G01",
+        "B1-V04"
+      ],
+      "bloomLevel": "Apply",
+      "difficulty": "easy",
+      "question": "You __________ more easily during afternoon classes if you __________ a bottle of water on your desk to stay hydrated.",
+      "options": [
+        {
+          "id": "A",
+          "text": "focus / will keep"
+        },
+        {
+          "id": "B",
+          "text": "can focus / keep"
+        },
+        {
+          "id": "C",
+          "text": "can to focus / keep"
+        },
+        {
+          "id": "D",
+          "text": "will focus / kept"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Trong Câu điều kiện loại 1 (B1-G01), mệnh đề chính có thể dùng 'can + V (nguyên mẫu)' ('can focus') để diễn tả khả năng/kết quả thực tế, còn mệnh đề If luôn chia thì Hiện tại đơn ('keep').",
+      "distractorExplanationsVi": {
+        "A": "Sai quy tắc thì: đặt 'will' trong mệnh đề If và đảo ngược cấu trúc giữa hai mệnh đề.",
+        "C": "Sai cấu trúc động từ khuyết thiếu: sau 'can' dùng động từ nguyên mẫu không có 'to' ('can focus').",
+        "D": "Trộn lẫn sai loại câu điều kiện: dùng 'will' (loại 1) ở mệnh đề chính nhưng lại chia Quá khứ đơn 'kept' ở mệnh đề If."
+      }
+    },
+    {
+      "id": "B1-NQ05",
+      "type": "multiple_choice",
+      "skill": "grammar",
+      "learningObjective": "B1-LO2",
+      "sourceReferences": [
+        "B1-G01",
+        "B1-V07"
+      ],
+      "bloomLevel": "Analyse",
+      "difficulty": "medium",
+      "question": "Which of the following sentences is grammatically CORRECT?",
+      "options": [
+        {
+          "id": "A",
+          "text": "If your sister want to lead an active lifestyle, she should join the school cycling club."
+        },
+        {
+          "id": "B",
+          "text": "If your sister will want to lead an active lifestyle, she should join the school cycling club."
+        },
+        {
+          "id": "C",
+          "text": "If your sister wants to lead an active lifestyle, she should to join the school cycling club."
+        },
+        {
+          "id": "D",
+          "text": "If your sister wants to lead an active lifestyle, she should join the school cycling club."
+        }
+      ],
+      "correctOptionId": "D",
+      "explanationVi": "Câu D tuân thủ đầy đủ cấu trúc Câu điều kiện loại 1 đưa lời khuyên (B1-G01): mệnh đề If chia Hiện tại đơn ngôi thứ 3 số ít ('your sister wants'), mệnh đề chính dùng 'should + V nguyên mẫu không to' ('should join').",
+      "distractorExplanationsVi": {
+        "A": "Sai chia động từ: chủ ngữ ngôi thứ 3 số ít 'your sister' cần động từ thêm '-s' ('wants').",
+        "B": "Sai quy tắc mệnh đề If: không sử dụng trợ động từ 'will' bên trong mệnh đề điều kiện If.",
+        "C": "Sai cấu trúc động từ khuyết thiếu: sau 'should' tuyệt đối không có 'to' (nhầm lẫn với 'ought to')."
+      }
+    },
+    {
+      "id": "B1-NQ06",
+      "type": "multiple_choice",
+      "skill": "grammar",
+      "learningObjective": "B1-LO2",
+      "sourceReferences": [
+        "B1-G01",
+        "B1-V06"
+      ],
+      "bloomLevel": "Apply",
+      "difficulty": "hard",
+      "question": "Unless Mai __________ during exam week, she won't be able to concentrate well in her morning classes.",
+      "options": [
+        {
+          "id": "A",
+          "text": "doesn't get enough sleep"
+        },
+        {
+          "id": "B",
+          "text": "gets enough sleep"
+        },
+        {
+          "id": "C",
+          "text": "get enough sleep"
+        },
+        {
+          "id": "D",
+          "text": "will get enough sleep"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Cấu trúc 'Unless' (tương đương 'If + S + do/does not') trong Câu điều kiện loại 1 (B1-G01) đi với mệnh đề Hiện tại đơn thể khẳng định. Chủ ngữ 'Mai' là ngôi thứ 3 số ít nên chia 'gets enough sleep' (B1-V06).",
+      "distractorExplanationsVi": {
+        "A": "Lỗi phủ định kép: bản thân 'Unless' đã mang nghĩa phủ định nên không dùng 'doesn't' theo sau.",
+        "C": "Sai chia động từ: thiếu đuôi '-s' ở động từ 'get' đối với chủ ngữ ngôi thứ 3 số ít 'Mai'.",
+        "D": "Sai thì: không sử dụng 'will' trong mệnh đề điều kiện bắt đầu bằng 'Unless'."
+      }
+    }
+  ]
+}

@@ -1,0 +1,244 @@
+{
+  "schemaVersion": "1.0",
+  "title": "Healthy Lifestyle Quiz",
+  "level": "B2",
+  "language": "en-GB",
+  "questionCount": 6,
+  "passScore": 5,
+  "status": "draft_pending_teacher_approval",
+  "questions": [
+    {
+      "id": "B2-NQ01",
+      "type": "multiple_choice",
+      "skill": "vocabulary",
+      "learningObjective": "B2-LO1",
+      "sourceReferences": [
+        "B2-V04",
+        "B2-V06"
+      ],
+      "bloomLevel": "Apply",
+      "difficulty": "medium",
+      "question": "For the past six months, Hana has slept barely four hours a night to finish client reports, and she now catches colds almost every month. Doctors explain that prolonged __________ can seriously weaken __________.",
+      "options": [
+        {
+          "id": "A",
+          "text": "a sleep deprivation / immune system"
+        },
+        {
+          "id": "B",
+          "text": "sleep-deprived / the immune system"
+        },
+        {
+          "id": "C",
+          "text": "sleep deprivation / the immune system"
+        },
+        {
+          "id": "D",
+          "text": "sleep deprivation / immune system"
+        }
+      ],
+      "correctOptionId": "C",
+      "explanationVi": "'sleep deprivation' (B2-V04) là cụm danh từ không đếm được (không dùng mạo từ 'a'), còn 'immune system' (B2-V06) là cụm danh từ đếm được nên bắt buộc có từ hạn định phía trước ('the immune system').",
+      "distractorExplanationsVi": {
+        "A": "Mắc đồng thời hai lỗi: thêm mạo từ 'a' trước danh từ không đếm được 'sleep deprivation' và thiếu từ hạn định trước 'immune system'.",
+        "B": "Sai từ loại: 'sleep-deprived' là tính từ nên không thể làm danh từ chủ ngữ sau tính từ 'prolonged'.",
+        "D": "Thiếu mạo từ/từ hạn định trước cụm danh từ đếm được 'immune system' (lỗi thường gặp đã nêu trong B2-V06)."
+      }
+    },
+    {
+      "id": "B2-NQ02",
+      "type": "multiple_choice",
+      "skill": "vocabulary",
+      "learningObjective": "B2-LO1",
+      "sourceReferences": [
+        "B2-V09",
+        "B2-V01",
+        "B2-V03",
+        "B2-V07"
+      ],
+      "bloomLevel": "Understand",
+      "difficulty": "medium",
+      "question": "Because Phuong ignored mild shoulder discomfort at her office desk for three years, it eventually developed into __________ pain that now affects her daily routine.",
+      "options": [
+        {
+          "id": "A",
+          "text": "sustainable"
+        },
+        {
+          "id": "B",
+          "text": "sedentary"
+        },
+        {
+          "id": "C",
+          "text": "burnout"
+        },
+        {
+          "id": "D",
+          "text": "chronic"
+        }
+      ],
+      "correctOptionId": "D",
+      "explanationVi": "Tính từ 'chronic' (B2-V09 – mãn tính, kéo dài dai dẳng) chuyên dùng trước các danh từ chỉ tình trạng sức khỏe tiêu cực như 'pain', 'stress', 'fatigue', khớp chính xác với bối cảnh cơn đau kéo dài sau 3 năm.",
+      "distractorExplanationsVi": {
+        "A": "Sai sắc thái nghĩa: 'sustainable' (bền vững, duy trì được lâu dài, B2-V07) mang nghĩa tích cực dùng cho thói quen hoặc kế hoạch, không dùng để miêu tả cơn đau.",
+        "B": "Sai kết hợp từ: 'sedentary' (ít vận động, B2-V01) dùng để miêu tả lối sống hoặc công việc ngồi nhiều, không dùng trực tiếp để bổ nghĩa cho 'pain'.",
+        "C": "Sai từ loại và nghĩa: 'burnout' (B2-V03) là danh từ chỉ sự kiệt sức, không phải tính từ diễn tả tính chất mãn tính của cơn đau."
+      }
+    },
+    {
+      "id": "B2-NQ03",
+      "type": "multiple_choice",
+      "skill": "vocabulary",
+      "learningObjective": "B2-LO1",
+      "sourceReferences": [
+        "B2-V02",
+        "B2-V03",
+        "B2-V05",
+        "B2-V08"
+      ],
+      "bloomLevel": "Analyse",
+      "difficulty": "hard",
+      "question": "Which sentence uses the B2 health and lifestyle vocabulary ACCURATELY?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Setting clear boundaries after 6 p.m. helps remote employees strike a healthy work-life balance."
+        },
+        {
+          "id": "B",
+          "text": "After two months of double shifts, the young nurse is completely burnout and needs time off."
+        },
+        {
+          "id": "C",
+          "text": "Working overnight without rest will eventually take toll on your concentration and mood."
+        },
+        {
+          "id": "D",
+          "text": "Regular jogging helps university students solve stress more effectively during exam season."
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Cụm collocation 'strike a healthy work-life balance' (B2-V02) chuẩn xác cả về động từ đi kèm ('strike'), mạo từ 'a' trước tính từ 'healthy' và dấu gạch nối trong 'work-life'.",
+      "distractorExplanationsVi": {
+        "B": "Sai từ loại: 'burnout' là danh từ nên không đứng sau 'is completely'; cần dùng tính từ 'burnt out' hoặc cấu trúc 'suffering from burnout' (B2-V03).",
+        "C": "Thiếu mạo từ 'a' trong cụm cố định 'take a toll on' (B2-V05).",
+        "D": "Sai collocation: tiếng Anh không dùng 'solve stress' để nói về việc xoay xở/kiểm soát căng thẳng mà phải dùng 'cope with stress' (B2-V08)."
+      }
+    },
+    {
+      "id": "B2-NQ04",
+      "type": "multiple_choice",
+      "skill": "grammar",
+      "learningObjective": "B2-LO2",
+      "sourceReferences": [
+        "B2-G01",
+        "B2-V07"
+      ],
+      "bloomLevel": "Apply",
+      "difficulty": "medium",
+      "question": "Currently, Phong's company has a strict full-time office policy, so he commutes for three hours every day and has no energy left for exercise. If his company __________ him two remote-working days a week, he __________ a sustainable jogging routine in the morning.",
+      "options": [
+        {
+          "id": "A",
+          "text": "gives / would build"
+        },
+        {
+          "id": "B",
+          "text": "would give / built"
+        },
+        {
+          "id": "C",
+          "text": "gave / could build"
+        },
+        {
+          "id": "D",
+          "text": "gave / could to build"
+        }
+      ],
+      "correctOptionId": "C",
+      "explanationVi": "Ngữ cảnh nêu rõ chính sách hiện tại của công ty bắt buộc làm toàn thời gian tại văn phòng nên đây là tình huống giả định trái thực tế hiện tại, dùng Câu điều kiện loại 2 (B2-G01): mệnh đề If chia Quá khứ đơn ('gave'), mệnh đề chính dùng 'could build' để diễn tả khả năng/cơ hội mới mở ra.",
+      "distractorExplanationsVi": {
+        "A": "Trộn lẫn sai hai loại câu điều kiện: dùng Hiện tại đơn 'gives' (loại 1) ở mệnh đề If nhưng lại ghép với 'would build' (loại 2) ở mệnh đề chính.",
+        "B": "Đảo ngược cấu trúc sai: đặt 'would' trong mệnh đề If và chia Quá khứ đơn ở mệnh đề chính.",
+        "D": "Sai cấu trúc sau động từ khuyết thiếu: không dùng 'to' sau 'could' (phải là 'could build')."
+      }
+    },
+    {
+      "id": "B2-NQ05",
+      "type": "multiple_choice",
+      "skill": "grammar",
+      "learningObjective": "B2-LO2",
+      "sourceReferences": [
+        "B2-G01"
+      ],
+      "bloomLevel": "Analyse",
+      "difficulty": "hard",
+      "question": "Read the two situations below:\n(1) Minh has already packed his gym bag and plans to leave the office at 5 p.m. today.\n(2) Minh's job requires him to work until 9 p.m. every single day, so he has no chance to visit the gym.\nWhich pair of sentences matches situations (1) and (2) MOST accurately?",
+      "options": [
+        {
+          "id": "A",
+          "text": "(1) If Minh leaves at 5 p.m. today, he will have time to exercise. / (2) If Minh finished work earlier, he would have time to exercise."
+        },
+        {
+          "id": "B",
+          "text": "(1) If Minh left at 5 p.m. today, he would have time to exercise. / (2) If Minh finishes work earlier, he will have time to exercise."
+        },
+        {
+          "id": "C",
+          "text": "(1) If Minh will leave at 5 p.m. today, he has time to exercise. / (2) If Minh would finish work earlier, he had time to exercise."
+        },
+        {
+          "id": "D",
+          "text": "(1) If Minh leaves at 5 p.m. today, he would have time to exercise. / (2) If Minh finished work earlier, he will have time to exercise."
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Tình huống (1) là kế hoạch có thật và khả thi trong tương lai gần nên dùng Câu điều kiện loại 1 ('leaves' kết hợp 'will have'). Tình huống (2) là giả định trái với thực tế công việc hiện tại nên dùng Câu điều kiện loại 2 ('finished' kết hợp 'would have') (B2-G01).",
+      "distractorExplanationsVi": {
+        "B": "Đảo ngược sắc thái thực tế và giả định: dùng loại 2 cho kế hoạch có thật ở (1) và dùng loại 1 cho tình huống trái thực tế ở (2).",
+        "C": "Sai cấu trúc ngữ pháp cơ bản ở cả hai câu khi đặt 'will' và 'would' ngay trong mệnh đề If.",
+        "D": "Trộn lẫn mệnh đề của Câu điều kiện loại 1 và loại 2 ở cả hai câu."
+      }
+    },
+    {
+      "id": "B2-NQ06",
+      "type": "multiple_choice",
+      "skill": "grammar",
+      "learningObjective": "B2-LO2",
+      "sourceReferences": [
+        "B2-G01",
+        "B2-V03",
+        "B2-V08",
+        "B2-V10"
+      ],
+      "bloomLevel": "Apply",
+      "difficulty": "medium",
+      "question": "Your colleague is close to burnout because she never says no to extra weekend tasks. Which sentence gives well-reasoned hypothetical advice in standard B2 written English?",
+      "options": [
+        {
+          "id": "A",
+          "text": "If I were in your shoes, I wouldn't accepted extra weekend tasks because you need time to recover."
+        },
+        {
+          "id": "B",
+          "text": "If I were in your shoes, I would prioritise rest at weekends so that I could cope with weekday pressure without burning out."
+        },
+        {
+          "id": "C",
+          "text": "If I was in your shoes, I wouldn't take extra weekend tasks, otherwise I will suffer from burnout."
+        },
+        {
+          "id": "D",
+          "text": "I would prioritise rest at weekends, if I were in your shoes, so I can avoid burnout."
+        }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Câu B sử dụng chuẩn cấu trúc lời khuyên giả định B2 ('If I were in your shoes, I would + V nguyên mẫu'), giữ nhất quán thì giả định ở mệnh đề mục đích ('so that I could cope with') và kèm lý do thuyết phục (B2-G01).",
+      "distractorExplanationsVi": {
+        "A": "Sai dạng động từ sau động từ khuyết thiếu: dùng 'wouldn't accepted' thay vì động từ nguyên mẫu 'wouldn't accept'.",
+        "C": "Dùng 'If I was' kém chuẩn mực trong văn viết B2 và chuyển đột ngột sang 'will' không đồng bộ với khung giả định.",
+        "D": "Sai dấu câu khi đặt dấu phẩy trước mệnh đề 'if' đứng sau mệnh đề chính, đồng thời dùng 'can' thiếu đồng bộ thì với 'would'."
+      }
+    }
+  ]
+}
