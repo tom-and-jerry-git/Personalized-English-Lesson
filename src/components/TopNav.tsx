@@ -29,6 +29,8 @@ export function TopNav({
     { id: 'review', label: 'Review', enabled: hasSubmitted },
   ];
 
+  const showChangeLevelAsPrimary = Boolean(selectedLevel) && !hasSubmitted;
+
   return (
     <header className="sticky top-0 z-30 border-b border-[#DCEAE2] bg-white/95 backdrop-blur-sm">
       <div className="mx-auto flex h-14 max-w-6xl items-center justify-between gap-3 px-3 sm:h-16 sm:gap-6 sm:px-6 lg:gap-8 lg:px-8">
@@ -75,20 +77,45 @@ export function TopNav({
               </button>
             );
           })}
+
+          {canvaViewUrl && (
+            <a
+              href={canvaViewUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 py-1 text-sm font-medium text-[#167D56] transition-colors hover:text-[#123F32] hover:underline whitespace-nowrap shrink-0 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#167D56]"
+            >
+              <span>Canva Lessons</span>
+              <ExternalLink className="h-3.5 w-3.5" aria-hidden="true" />
+            </a>
+          )}
         </nav>
 
-        {/* Zone 3: Single contextual primary action */}
-        <div className="flex items-center shrink-0">
-          {selectedLevel ? (
-            <button
-              type="button"
-              onClick={onRequestChangeLevel}
-              className="inline-flex min-h-[40px] items-center gap-1.5 rounded-xl border border-[#DCEAE2] bg-[#F7FAF8] px-3 py-2 text-xs font-semibold text-[#123F32] transition-colors hover:border-[#167D56]/40 hover:bg-[#E9F8F0] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#167D56] whitespace-nowrap shrink-0 sm:gap-2 sm:px-4 sm:text-sm"
-            >
-              <ArrowLeftRight className="h-3.5 w-3.5 text-[#167D56]" aria-hidden="true" />
-              <span className="sm:hidden">Level</span>
-              <span className="hidden sm:inline">Change Level</span>
-            </button>
+        {/* Zone 3: Primary action + mobile Canva quick return */}
+        <div className="flex items-center gap-2 shrink-0">
+          {showChangeLevelAsPrimary ? (
+            <>
+              {canvaViewUrl && (
+                <a
+                  href={canvaViewUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex min-h-[40px] items-center gap-1 rounded-xl px-2.5 py-2 text-xs font-semibold text-[#167D56] transition-colors hover:bg-[#E9F8F0] whitespace-nowrap shrink-0 md:hidden"
+                >
+                  <span>Canva</span>
+                  <ExternalLink className="h-3.5 w-3.5" aria-hidden="true" />
+                </a>
+              )}
+              <button
+                type="button"
+                onClick={onRequestChangeLevel}
+                className="inline-flex min-h-[40px] items-center gap-1.5 rounded-xl border border-[#DCEAE2] bg-[#F7FAF8] px-3 py-2 text-xs font-semibold text-[#123F32] transition-colors hover:border-[#167D56]/40 hover:bg-[#E9F8F0] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#167D56] whitespace-nowrap shrink-0 sm:gap-2 sm:px-4 sm:text-sm"
+              >
+                <ArrowLeftRight className="h-3.5 w-3.5 text-[#167D56]" aria-hidden="true" />
+                <span className="sm:hidden">Level</span>
+                <span className="hidden sm:inline">Change Level</span>
+              </button>
+            </>
           ) : canvaViewUrl ? (
             <a
               href={canvaViewUrl}

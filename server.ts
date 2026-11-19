@@ -31,13 +31,15 @@ import {
 } from './server/groqService.ts';
 import type { ApiErrorPayload, AppRuntimeConfig, PublicQuizPayload } from './src/types/quiz.ts';
 
-function getSafeCanvaViewUrl(): string | null {
-  const raw = process.env.CANVA_VIEW_URL?.trim();
-  if (!raw) {
+const DEFAULT_CANVA_VIEW_URL = 'https://canva.link/twmsnan0sbdalks';
+
+function validateSafeCanvaUrl(raw: string | undefined): string | null {
+  const trimmed = raw?.trim();
+  if (!trimmed) {
     return null;
   }
   try {
-    const parsed = new URL(raw);
+    const parsed = new URL(trimmed);
     if (parsed.protocol !== 'https:' && parsed.protocol !== 'http:') {
       return null;
     }
@@ -49,6 +51,10 @@ function getSafeCanvaViewUrl(): string | null {
   } catch {
     return null;
   }
+}
+
+function getSafeCanvaViewUrl(): string | null {
+  return validateSafeCanvaUrl(process.env.CANVA_VIEW_URL) ?? validateSafeCanvaUrl(DEFAULT_CANVA_VIEW_URL);
 }
 
 function getClientIp(req: Request): string {

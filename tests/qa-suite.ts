@@ -411,7 +411,7 @@ async function main() {
         process.env.CANVA_VIEW_URL =
           'https://www.canva.com/design/DAHbWwDfzQQ/rgcbqpE4FZNgKXRGjyX-dw/edit';
         const cfgEdit = await fetchJson(baseUrl, '/api/config');
-        assert.equal(cfgEdit.body.canvaViewUrl, null);
+        assert.equal(cfgEdit.body.canvaViewUrl, 'https://canva.link/twmsnan0sbdalks');
 
         process.env.CANVA_VIEW_URL =
           'https://www.canva.com/design/DAHbWwDfzQQ/example-token/view';
@@ -422,13 +422,13 @@ async function main() {
         );
 
         delete process.env.CANVA_VIEW_URL;
-        const cfgUnset = await fetchJson(baseUrl, '/api/config');
-        assert.equal(cfgUnset.body.canvaViewUrl, null);
+        const cfgDefault = await fetchJson(baseUrl, '/api/config');
+        assert.equal(cfgDefault.body.canvaViewUrl, 'https://canva.link/twmsnan0sbdalks');
       } finally {
         if (prev !== undefined) process.env.CANVA_VIEW_URL = prev;
         else delete process.env.CANVA_VIEW_URL;
       }
-      return 'Verified /edit Canva links are blocked and valid /view links are served cleanly.';
+      return 'Verified /edit Canva links are blocked and default/override view links are served cleanly.';
     });
   } finally {
     if (server) server.close();
