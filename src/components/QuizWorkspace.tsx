@@ -127,18 +127,18 @@ export function QuizWorkspace({
   }
 
   return (
-    <main className="mx-auto max-w-3xl px-4 py-8 sm:px-6 sm:py-12">
+    <main className="mx-auto max-w-3xl px-3.5 py-6 sm:px-6 sm:py-10 lg:py-12">
       {/* Progress Header */}
       <section aria-label="Quiz progress">
-        <div className="flex flex-wrap items-center justify-between gap-2 text-xs text-[#4A665C] sm:text-sm">
-          <div className="flex flex-wrap items-center gap-2">
+        <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1 text-xs text-[#4A665C] sm:text-sm">
+          <div className="flex flex-wrap items-center gap-x-2 gap-y-0.5">
             <span className="font-mono font-semibold text-[#167D56]">CEFR {level}</span>
             <span aria-hidden="true">·</span>
             <span className="font-medium text-[#123F32]">{title}</span>
           </div>
           <div className="flex items-center gap-2 font-mono text-xs tabular-nums">
             <span className="font-semibold text-[#123F32]">
-              Question {currentIndex + 1} of {totalQuestions}
+              Q{currentIndex + 1}/{totalQuestions}
             </span>
             <span aria-hidden="true">·</span>
             <span>
@@ -154,7 +154,7 @@ export function QuizWorkspace({
           aria-valuemin={1}
           aria-valuemax={totalQuestions}
           aria-label={`Question ${currentIndex + 1} of ${totalQuestions}`}
-          className="mt-3 h-2 w-full overflow-hidden rounded-full bg-[#DCEAE2]"
+          className="mt-2.5 h-2 w-full overflow-hidden rounded-full bg-[#DCEAE2] sm:mt-3"
         >
           <div
             className="h-full rounded-full bg-gradient-to-r from-[#167D56] to-[#24A78B] transition-all duration-200"
@@ -162,13 +162,13 @@ export function QuizWorkspace({
           />
         </div>
 
-        {/* Clickable Question Step Selector */}
+        {/* Clickable Question Step Selector — symmetric 6-col grid on mobile, compact row on desktop */}
         <div
           role="navigation"
           aria-label="Jump to question"
-          className="mt-4 flex items-center justify-between gap-2"
+          className="mt-3.5 flex flex-col gap-2 sm:mt-4 sm:flex-row sm:items-center sm:justify-between"
         >
-          <div className="flex flex-wrap items-center gap-1.5">
+          <div className="grid w-full grid-cols-6 gap-1.5 sm:flex sm:w-auto sm:flex-wrap">
             {questions.map((q, idx) => {
               const isCurrent = idx === currentIndex;
               const isAnswered = Boolean(selectedAnswers[q.id]);
@@ -179,7 +179,7 @@ export function QuizWorkspace({
                   onClick={() => onNavigateQuestion(idx)}
                   aria-label={`Question ${idx + 1}${isAnswered ? ' (answered)' : ' (unanswered)'}`}
                   aria-current={isCurrent ? 'step' : undefined}
-                  className={`inline-flex h-9 w-9 items-center justify-center rounded-lg font-mono text-xs font-semibold tabular-nums transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#167D56] ${
+                  className={`inline-flex min-h-[42px] w-full items-center justify-center rounded-lg font-mono text-xs font-semibold tabular-nums transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#167D56] sm:h-9 sm:min-h-0 sm:w-9 ${
                     isCurrent
                       ? 'bg-[#167D56] text-white'
                       : isAnswered
@@ -200,9 +200,9 @@ export function QuizWorkspace({
       </section>
 
       {/* Main Question Card */}
-      <article className="mt-6 rounded-2xl border border-[#DCEAE2] bg-white p-6 sm:p-8">
+      <article className="mt-5 rounded-2xl border border-[#DCEAE2] bg-white p-4 sm:mt-6 sm:p-6 lg:p-8">
         {/* Quiet unboxed metadata line */}
-        <div className="flex flex-wrap items-center gap-2 text-xs text-[#4A665C]">
+        <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-[#4A665C]">
           <span className="font-mono font-semibold text-[#123F32]">{currentQuestion.id}</span>
           <span aria-hidden="true">·</span>
           <span className="capitalize">{currentQuestion.skill}</span>
@@ -221,12 +221,12 @@ export function QuizWorkspace({
         </div>
 
         {/* Question Prompt */}
-        <h2 className="mt-4 whitespace-pre-line font-display text-lg font-semibold leading-relaxed text-[#123F32] sm:text-xl">
+        <h2 className="mt-3.5 whitespace-pre-line break-words font-display text-base font-semibold leading-relaxed text-[#123F32] sm:mt-4 sm:text-lg lg:text-xl">
           {currentQuestion.question}
         </h2>
 
         {/* Four Options A/B/C/D */}
-        <fieldset className="mt-6 space-y-3">
+        <fieldset className="mt-5 space-y-2.5 sm:mt-6 sm:space-y-3">
           <legend className="sr-only">Choose one answer for {currentQuestion.id}</legend>
           {currentQuestion.options.map((option) => {
             const isSelected = currentSelected === option.id;
@@ -237,7 +237,7 @@ export function QuizWorkspace({
                 role="radio"
                 aria-checked={isSelected}
                 onClick={() => onSelectAnswer(currentQuestion.id, option.id)}
-                className={`group flex min-h-[54px] w-full items-start gap-3.5 rounded-xl border px-4 py-3.5 text-left transition-all duration-150 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#167D56] ${
+                className={`group flex min-h-[52px] w-full items-start gap-3 rounded-xl border px-3.5 py-3 text-left transition-all duration-150 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#167D56] sm:gap-3.5 sm:px-4 sm:py-3.5 ${
                   isSelected
                     ? 'border-[#167D56] bg-[#E9F8F0]/70 text-[#123F32] shadow-[0_0_0_1px_#167D56]'
                     : 'border-[#DCEAE2] bg-white text-[#123F32] hover:border-[#24A78B]/60 hover:bg-[#F7FAF8]'
@@ -252,7 +252,7 @@ export function QuizWorkspace({
                 >
                   {option.id}
                 </span>
-                <span className="flex-1 pt-0.5 text-sm leading-relaxed sm:text-[15px]">
+                <span className="min-w-0 flex-1 break-words pt-0.5 text-sm leading-relaxed sm:text-[15px]">
                   {option.text}
                 </span>
                 {isSelected && (
@@ -267,55 +267,58 @@ export function QuizWorkspace({
         </fieldset>
 
         {/* Navigation & Submit Controls */}
-        <div className="mt-8 flex flex-wrap items-center justify-between gap-3 border-t border-[#DCEAE2] pt-6">
-          <button
-            type="button"
-            disabled={currentIndex === 0}
-            onClick={() => onNavigateQuestion(currentIndex - 1)}
-            className="inline-flex min-h-[44px] items-center gap-2 rounded-xl border border-[#DCEAE2] bg-white px-4 py-2.5 text-sm font-semibold text-[#123F32] transition-colors hover:bg-[#F7FAF8] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#167D56] disabled:cursor-not-allowed disabled:opacity-45"
-          >
-            <ArrowLeft className="h-4 w-4" aria-hidden="true" />
-            <span>Previous</span>
-          </button>
+        <div className="mt-6 flex flex-col gap-2.5 border-t border-[#DCEAE2] pt-5 sm:mt-8 sm:flex-row sm:items-center sm:justify-between sm:gap-3 sm:pt-6">
+          <div className="grid grid-cols-2 gap-2.5 sm:contents">
+            <button
+              type="button"
+              disabled={currentIndex === 0}
+              onClick={() => onNavigateQuestion(currentIndex - 1)}
+              className="inline-flex min-h-[46px] items-center justify-center gap-2 rounded-xl border border-[#DCEAE2] bg-white px-4 py-2.5 text-sm font-semibold text-[#123F32] transition-colors hover:bg-[#F7FAF8] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#167D56] disabled:cursor-not-allowed disabled:opacity-45 sm:min-h-[44px] sm:justify-start"
+            >
+              <ArrowLeft className="h-4 w-4" aria-hidden="true" />
+              <span>Previous</span>
+            </button>
 
-          <div className="flex items-center gap-3">
-            {currentIndex < totalQuestions - 1 ? (
-              <button
-                type="button"
-                onClick={() => onNavigateQuestion(currentIndex + 1)}
-                className="inline-flex min-h-[44px] items-center gap-2 rounded-xl bg-[#123F32] px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-[#167D56] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#167D56]"
-              >
-                <span>Next</span>
-                <ArrowRight className="h-4 w-4" aria-hidden="true" />
-              </button>
-            ) : (
-              <button
-                type="button"
-                disabled={isSubmitting}
-                onClick={() => setShowSubmitModal(true)}
-                className="inline-flex min-h-[44px] items-center gap-2 rounded-xl bg-[#167D56] px-6 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-[#123F32] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#167D56] disabled:cursor-not-allowed disabled:opacity-60"
-              >
-                <Send className="h-4 w-4" aria-hidden="true" />
-                <span>Submit Quiz</span>
-              </button>
-            )}
+            <div className="contents sm:flex sm:items-center sm:gap-3">
+              {currentIndex < totalQuestions - 1 ? (
+                <button
+                  type="button"
+                  onClick={() => onNavigateQuestion(currentIndex + 1)}
+                  className="inline-flex min-h-[46px] items-center justify-center gap-2 rounded-xl bg-[#123F32] px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-[#167D56] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#167D56] sm:min-h-[44px]"
+                >
+                  <span>Next</span>
+                  <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                </button>
+              ) : (
+                <button
+                  type="button"
+                  disabled={isSubmitting}
+                  onClick={() => setShowSubmitModal(true)}
+                  className="inline-flex min-h-[46px] items-center justify-center gap-2 rounded-xl bg-[#167D56] px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-[#123F32] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#167D56] disabled:cursor-not-allowed disabled:opacity-60 sm:min-h-[44px] sm:px-6"
+                >
+                  <Send className="h-4 w-4" aria-hidden="true" />
+                  <span>Submit Quiz</span>
+                </button>
+              )}
 
-            {currentIndex < totalQuestions - 1 && answeredCount === totalQuestions && (
-              <button
-                type="button"
-                disabled={isSubmitting}
-                onClick={() => setShowSubmitModal(true)}
-                className="inline-flex min-h-[44px] items-center gap-2 rounded-xl bg-[#167D56] px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-[#123F32] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#167D56]"
-              >
-                <span>Submit Quiz</span>
-              </button>
-            )}
+              {currentIndex < totalQuestions - 1 && answeredCount === totalQuestions && (
+                <button
+                  type="button"
+                  disabled={isSubmitting}
+                  onClick={() => setShowSubmitModal(true)}
+                  className="col-span-2 inline-flex min-h-[46px] items-center justify-center gap-2 rounded-xl bg-[#167D56] px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-[#123F32] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#167D56] sm:col-span-1 sm:min-h-[44px]"
+                >
+                  <Send className="h-4 w-4 sm:hidden" aria-hidden="true" />
+                  <span>Submit Quiz</span>
+                </button>
+              )}
+            </div>
           </div>
         </div>
       </article>
 
       {/* Collapsible Pre-Submit AI Tutor directly below A/B/C/D options */}
-      <div className="mt-6">
+      <div className="mt-5 sm:mt-6">
         <QuestionTutorPanel
           key={`pre-${currentQuestion.id}`}
           mode="conceptual_help"
@@ -344,9 +347,9 @@ export function QuizWorkspace({
           aria-labelledby="submit-modal-title"
           className="fixed inset-0 z-50 flex items-center justify-center bg-[#123F32]/40 p-4 backdrop-blur-[2px]"
         >
-          <div className="w-full max-w-md rounded-2xl border border-[#DCEAE2] bg-white p-6 shadow-xl sm:p-7">
+          <div className="max-h-[90dvh] w-full max-w-md overflow-y-auto rounded-2xl border border-[#DCEAE2] bg-white p-5 shadow-xl sm:p-7">
             <div className="flex items-start justify-between gap-4">
-              <div>
+              <div className="min-w-0">
                 <h2
                   id="submit-modal-title"
                   className="font-display text-lg font-bold text-[#123F32]"
@@ -362,14 +365,14 @@ export function QuizWorkspace({
                 disabled={isSubmitting}
                 onClick={() => setShowSubmitModal(false)}
                 aria-label="Close confirmation dialog"
-                className="rounded-lg p-1.5 text-[#4A665C] hover:bg-[#F7FAF8] hover:text-[#123F32]"
+                className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-lg text-[#4A665C] hover:bg-[#F7FAF8] hover:text-[#123F32]"
               >
                 <X className="h-5 w-5" aria-hidden="true" />
               </button>
             </div>
 
             <div className="mt-5 rounded-xl bg-[#F7FAF8] p-4 text-sm">
-              <div className="flex items-center justify-between">
+              <div className="flex items-center justify-between gap-2">
                 <span className="text-[#4A665C]">Questions answered</span>
                 <span className="font-mono font-semibold text-[#123F32] tabular-nums">
                   {answeredCount} / {totalQuestions}
@@ -402,12 +405,12 @@ export function QuizWorkspace({
               </div>
             )}
 
-            <div className="mt-6 flex items-center justify-end gap-3">
+            <div className="mt-6 flex flex-col-reverse gap-2.5 sm:flex-row sm:items-center sm:justify-end sm:gap-3">
               <button
                 type="button"
                 disabled={isSubmitting}
                 onClick={() => setShowSubmitModal(false)}
-                className="min-h-[42px] rounded-xl border border-[#DCEAE2] bg-white px-4 py-2 text-sm font-semibold text-[#123F32] hover:bg-[#F7FAF8] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#167D56] disabled:opacity-50"
+                className="min-h-[44px] w-full rounded-xl border border-[#DCEAE2] bg-white px-4 py-2 text-sm font-semibold text-[#123F32] hover:bg-[#F7FAF8] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#167D56] disabled:opacity-50 sm:w-auto"
               >
                 Review Questions
               </button>
@@ -415,7 +418,7 @@ export function QuizWorkspace({
                 type="button"
                 disabled={isSubmitting}
                 onClick={onConfirmSubmit}
-                className="inline-flex min-h-[42px] items-center gap-2 rounded-xl bg-[#167D56] px-5 py-2 text-sm font-semibold text-white hover:bg-[#123F32] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#167D56] disabled:cursor-not-allowed disabled:opacity-60"
+                className="inline-flex min-h-[44px] w-full items-center justify-center gap-2 rounded-xl bg-[#167D56] px-5 py-2 text-sm font-semibold text-white hover:bg-[#123F32] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#167D56] disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto"
               >
                 {isSubmitting ? (
                   <>

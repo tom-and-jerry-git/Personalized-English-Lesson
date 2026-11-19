@@ -126,7 +126,7 @@ export function FormattedAiText({ text, compact = false }: FormattedAiTextProps)
   }
 
   return (
-    <div className={`space-y-3 text-[#123F32]/90 ${textSize}`}>
+    <div className={`min-w-0 space-y-3 break-words text-[#123F32]/90 ${textSize}`}>
       {blocks.map((block, bIdx) => {
         if (block.type === 'bullet_list') {
           return (
@@ -134,13 +134,13 @@ export function FormattedAiText({ text, compact = false }: FormattedAiTextProps)
               {block.items.map((item, iIdx) => (
                 <li
                   key={`bli-${bIdx}-${iIdx}`}
-                  className="flex items-start gap-2.5 rounded-xl bg-[#F7FAF8] px-3.5 py-2.5 border border-[#DCEAE2]/80"
+                  className="flex min-w-0 items-start gap-2.5 rounded-xl border border-[#DCEAE2]/80 bg-[#F7FAF8] px-3 py-2.5 sm:px-3.5"
                 >
                   <span
                     aria-hidden="true"
                     className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#167D56]"
                   />
-                  <span className="flex-1">
+                  <span className="min-w-0 flex-1 break-words">
                     {renderInlineFormatting(item, `bl-${bIdx}-${iIdx}`)}
                   </span>
                 </li>
@@ -155,12 +155,12 @@ export function FormattedAiText({ text, compact = false }: FormattedAiTextProps)
               {block.items.map((item, iIdx) => (
                 <li
                   key={`oli-${bIdx}-${iIdx}`}
-                  className="flex items-start gap-3 rounded-xl bg-[#F7FAF8] px-3.5 py-2.5 border border-[#DCEAE2]/80"
+                  className="flex min-w-0 items-start gap-2.5 rounded-xl border border-[#DCEAE2]/80 bg-[#F7FAF8] px-3 py-2.5 sm:gap-3 sm:px-3.5"
                 >
-                  <span className="mt-0.5 font-mono text-xs font-semibold text-[#167D56] tabular-nums shrink-0">
+                  <span className="mt-0.5 shrink-0 font-mono text-xs font-semibold text-[#167D56] tabular-nums">
                     {item.num}.
                   </span>
-                  <span className="flex-1">
+                  <span className="min-w-0 flex-1 break-words">
                     {renderInlineFormatting(item.text, `ol-${bIdx}-${iIdx}`)}
                   </span>
                 </li>
@@ -170,9 +170,9 @@ export function FormattedAiText({ text, compact = false }: FormattedAiTextProps)
         }
 
         return (
-          <div key={`p-${bIdx}`} className="space-y-2">
+          <div key={`p-${bIdx}`} className="min-w-0 space-y-2">
             {block.lines.map((line, lIdx) => (
-              <p key={`pl-${bIdx}-${lIdx}`}>
+              <p key={`pl-${bIdx}-${lIdx}`} className="break-words">
                 {renderInlineFormatting(line, `p-${bIdx}-${lIdx}`)}
               </p>
             ))}

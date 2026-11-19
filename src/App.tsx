@@ -482,7 +482,7 @@ export default function App() {
           aria-labelledby="leave-quiz-title"
           className="fixed inset-0 z-50 flex items-center justify-center bg-[#123F32]/40 p-4 backdrop-blur-[2px]"
         >
-          <div className="w-full max-w-md rounded-2xl border border-[#DCEAE2] bg-white p-6 shadow-xl">
+          <div className="max-h-[90dvh] w-full max-w-md overflow-y-auto rounded-2xl border border-[#DCEAE2] bg-white p-5 shadow-xl sm:p-6">
             <h2 id="leave-quiz-title" className="font-display text-lg font-bold text-[#123F32]">
               Change English Level?
             </h2>
@@ -490,18 +490,18 @@ export default function App() {
               Switching levels will discard your current unsubmitted {selectedLevel} answers and
               question tutor notes so your next attempt starts clean.
             </p>
-            <div className="mt-6 flex items-center justify-end gap-3">
+            <div className="mt-6 flex flex-col-reverse gap-2.5 sm:flex-row sm:items-center sm:justify-end sm:gap-3">
               <button
                 type="button"
                 onClick={() => setShowChangeLevelConfirm(false)}
-                className="min-h-[42px] rounded-xl border border-[#DCEAE2] bg-white px-4 py-2 text-sm font-semibold text-[#123F32] hover:bg-[#F7FAF8]"
+                className="min-h-[44px] w-full rounded-xl border border-[#DCEAE2] bg-white px-4 py-2 text-sm font-semibold text-[#123F32] hover:bg-[#F7FAF8] sm:w-auto"
               >
                 Stay in Quiz
               </button>
               <button
                 type="button"
                 onClick={confirmChangeLevel}
-                className="min-h-[42px] rounded-xl bg-[#167D56] px-5 py-2 text-sm font-semibold text-white hover:bg-[#123F32]"
+                className="min-h-[44px] w-full rounded-xl bg-[#167D56] px-5 py-2 text-sm font-semibold text-white hover:bg-[#123F32] sm:w-auto"
               >
                 Switch Level
               </button>
